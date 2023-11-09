@@ -4,13 +4,18 @@ Run `$ npm install` before starting.
 
 Run the file "basics/server1.js" and answer the following questions:
 
-1. Identify the endpoint method in the code. Which phase of the event loop will the endpoint be scheduled to run?
-2. What do you see when you render "http://localhost:3001/" in the browser?
-3. Try console logging req.body inside the endpoint’s handler? What do you see in the console? Why?
+1. Identify the endpoint method in the code. Which phase of the event loop will the endpoint be scheduled to run? GET request in the POLL phase since its IO. 
+2. What do you see when you render "http://localhost:3001/" in the browser? ping pong
+3. Try console logging req.body inside the endpoint’s handler? What do you see in the console? Why? app listening on 3001
 
 Open the file "basics/server2.js" and answer the following:
 
-1. Run the server and list the order in which app.use and app.get functions are executed.
+1. Run the server and list the order in which app.use and app.get functions are executed. app listening on 3001
+{}
+get
+{}
+hello
+
 2. Move app.use in line 20 to above the app.get endpoint. Run the server and list the order of execution.
 3. Move all app.use functions above the app.get endpoint. Replace the return in the last app.use with next(). What will be the order of execution?
 
