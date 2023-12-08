@@ -30,9 +30,9 @@ Open the file "basics/server3.js" and answer the following:
 Open the file "basics/breakfastSchema.js". Inspect the schema structure and understand its meaning. Answer the following:
 
 1. Run the schema and make sure there are no error.
-2. What will happen if we create an instance of the schema with eggs set to 13?
-3. What will happen if we create an instance of the schema with drink set to "Milk"?
-4. Run "basics/mongoose-demo.js" and see what you get? make the changes in 2 and 3 and run again.
+2. What will happen if we create an instance of the schema with eggs set to 13? validation error
+3. What will happen if we create an instance of the schema with drink set to "Milk"? validation error
+4. Run "basics/mongoose-demo.js" and see what you get? make the changes in 2 and 3 and run again. failed: validation error
 5. Define a function insertMany(entries) in the above script, which takes a list of objects {eggs: N, drink: ‘some drink’} and inserts each entry in entries in the MongoDB collection my_db.
 
 # The Library App
