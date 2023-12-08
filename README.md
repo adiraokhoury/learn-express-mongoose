@@ -21,7 +21,7 @@ hello
 
 Open the file "basics/server3.js" and answer the following:
 
-1. What are the *params* in the path?
+1. What are the *params* in the path? userid,bookid
 2. Assume the server is running on localhost:3002. Provide a path which would be handled by the endpoint shown and provide the output.
 3. Construct a URL with inputs for the end point defined in '/user'. 
 
